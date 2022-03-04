@@ -11,7 +11,7 @@ async function renderPerson() {
 
     container.innerHTML = ""
 
-    response = await fetch("http://127.0.0.1:8001/sessions");
+    response = await fetch("http://127.0.0.1:8001/students?name=" + name);
 
 
     const person = await response.json();
@@ -20,19 +20,19 @@ async function renderPerson() {
     personNode.classList.add("session")
 
     personNode.innerHTML = `
+        <img class="Img" src="${person.imgSrc}">
         <div>
-        <h2>${person.title}</h2>
+            <h2>${person.name}</h2>
         </div>
         <div>
-        <h3>${person.dayOfTheWeek}</h3>
+            <h2>${person.surname}</h2>
         </div>
-        <img class="delete" src="images/smalltrash.svg" alt="Delete Sessioin Icon">
-        <div class="connected-cell">
-        <h4>${person.description}</h4>
+        <div>
+            <h2>${person.lehrjahr}</h2>
         </div>
-        <a href="/editSession.html?id=${person.id}" >
-        <img class="edit" src="images/iconedit.svg" alt="Edit Session Icon">
-        </a>
+        <div>
+            <h2>${person.beruf}</h2>
+        </div>
     `
     container.appendChild(personNode)
 }

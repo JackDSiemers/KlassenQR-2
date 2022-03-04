@@ -4,14 +4,16 @@
             "name": "Jack",
             "surename": "Siemers",
             "lehrjahr": 1,
-            "beruf": "Informatiker Applikationsentwickler"
+            "beruf": "Informatiker Applikationsentwickler",
+            "imgSrc": "/images/jack.jpg"
         },
         {
             "id": 2,
             "name": "Alex",
             "surename": "Stern",
             "lehrjahr": 1,
-            "beruf": "Informatiker Applikationsentwickler"
+            "beruf": "Informatiker Applikationsentwickler",
+            "imgSrc": "/images/jack.jpg"
         }
     ]
 
