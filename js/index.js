@@ -21,7 +21,7 @@ async function renderPerson(name) {
 
     personNode.innerHTML = `
     <div>
-        <img class="Img" src="/images/${person[0].imgSrc}">
+        <img class="img" src="/images/${person[0].imgSrc}">
     </div>
     <div>
         <h2>${person[0].name}</h2>
