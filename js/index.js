@@ -7,11 +7,11 @@ const container = document.querySelector(".container")
  * @param searchTerm
  * @returns {Promise<void>}
  */
-async function renderPerson() {
+async function renderPerson(name) {
 
     container.innerHTML = ""
 
-    response = await fetch("http://127.0.0.1:8001/students?name=" + name);
+    const response = await fetch(`http://127.0.0.1:8001/students?name=${name}&surname=${surname}`);
 
 
     const person = await response.json();
@@ -20,20 +20,18 @@ async function renderPerson() {
     personNode.classList.add("session")
 
     personNode.innerHTML = `
-        <img class="Img" src="${person.imgSrc}">
-        <div>
-            <h2>${person.name}</h2>
-        </div>
-        <div>
-            <h2>${person.surname}</h2>
-        </div>
-        <div>
-            <h2>${person.lehrjahr}</h2>
-        </div>
-        <div>
-            <h2>${person.beruf}</h2>
-        </div>
+    <div>
+        <img class="Img" src="/images/${person[0].imgSrc}">
+    </div>
+    <div>
+        <h2>${person[0].name}</h2>
+        <h2>${person[0].surname}</h2>
+        <h2>${person[0].lehrjahr}. Lehrjahr</h2>
+        <h2>${person[0].beruf}</h2>
+    </div>
     `
     container.appendChild(personNode)
+
+    document.title = `${name} ${surname}`;
 }
-renderPerson()
+renderPerson(name)

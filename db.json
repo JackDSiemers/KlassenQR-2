@@ -1,19 +1,35 @@
 {
     "students": [{
             "id": 1,
-            "name": "Jack",
-            "surename": "Siemers",
+            "name": "jack",
+            "surname": "siemers",
             "lehrjahr": 1,
             "beruf": "Informatiker Applikationsentwickler",
-            "imgSrc": "/images/jack.jpg"
+            "imgSrc": "jack.jpg"
         },
         {
             "id": 2,
-            "name": "Alex",
-            "surename": "Stern",
+            "name": "alex",
+            "surname": "stern",
             "lehrjahr": 1,
             "beruf": "Informatiker Applikationsentwickler",
-            "imgSrc": "/images/jack.jpg"
+            "imgSrc": "alex.jpg"
+        },
+        {
+            "id": 3,
+            "name": "liam",
+            "surname": "gleeson",
+            "lehrjahr": 1,
+            "beruf": "Informatiker Applikationsentwickler",
+            "imgSrc": "liam.png"
+        },
+        {
+            "id": 4,
+            "name": "martin",
+            "surname": "jaskelevic",
+            "lehrjahr": 1,
+            "beruf": "Informatiker Applikationsentwickler",
+            "imgSrc": "123.jpg"
         }
     ]
 

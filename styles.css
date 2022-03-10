@@ -1,28 +1,31 @@
 .container {
     padding: 10px;
-    background: #D9D7D7;
+    background: #caffbf;
     margin: 20px 20px;
-    border: 1.5px #A69FA0;
+    border: 1.5px #a0c09a;
     border-style: solid;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background: #ccc;
     box-shadow: 2px 4px 4px 0 #969696;
+}
+
+.session {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .img {
     width: 40vw;
     height: 40vw;
-    grid-row: 1 / span 4;
+    /*grid-row: 1 / span 4;*/
     left: 10px;
     border-radius: 4px;
     align-self: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 h2 {
-    font-size: small;
+    font-size: 4vw;
     text-align: start;
     font-family: 'Catamaran', sans-serif;
 }
