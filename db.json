@@ -30,6 +30,14 @@
             "lehrjahr": 1,
             "beruf": "Informatiker Applikationsentwickler",
             "imgSrc": "123.jpg"
+        },
+        {
+            "id": 5,
+            "name": "yao",
+            "surname": "kaiser",
+            "lehrjahr": 1,
+            "beruf": "Informatiker Applikationsentwickler",
+            "imgSrc": "yao.jpg"
         }
     ]
 
