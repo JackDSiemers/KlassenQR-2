@@ -13,7 +13,6 @@ async function renderPerson(name) {
 
     const response = await fetch(`http://127.0.0.1:8001/students?name=${name}&surname=${surname}`);
 
-
     const person = await response.json();
 
     const personNode = document.createElement("article")
