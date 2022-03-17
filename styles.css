@@ -1,4 +1,4 @@
-.container {
+.session {
     padding: 10px;
     background: #caffbf;
     margin: 20px 20px;
@@ -6,9 +6,6 @@
     border-style: solid;
     border-radius: 5px;
     box-shadow: 2px 4px 4px 0 #969696;
-}
-
-.session {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
